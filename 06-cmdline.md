@@ -77,12 +77,12 @@ R version 3.1.2 (2014-10-31)
 Platform: x86_64-pc-linux-gnu (64-bit)
 
 locale:
- [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C              
- [3] LC_TIME=en_US.UTF-8        LC_COLLATE=en_US.UTF-8    
- [5] LC_MONETARY=en_US.UTF-8    LC_MESSAGES=en_US.UTF-8   
- [7] LC_PAPER=en_US.UTF-8       LC_NAME=C                 
- [9] LC_ADDRESS=C               LC_TELEPHONE=C            
-[11] LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C       
+ [1] LC_CTYPE=en_CA.utf8       LC_NUMERIC=C             
+ [3] LC_TIME=en_CA.utf8        LC_COLLATE=en_CA.utf8    
+ [5] LC_MONETARY=en_CA.utf8    LC_MESSAGES=en_CA.utf8   
+ [7] LC_PAPER=en_CA.utf8       LC_NAME=C                
+ [9] LC_ADDRESS=C              LC_TELEPHONE=C           
+[11] LC_MEASUREMENT=en_CA.utf8 LC_IDENTIFICATION=C      
 
 attached base packages:
 [1] stats     graphics  grDevices utils     datasets  base     
@@ -322,7 +322,7 @@ Rscript readings-02.R data/inflammation-01.csv
 
 ~~~
 
-> ## Challenges {.challenge}
+> ## Challenge - A simple command line program {.challenge}
 >
 >  + Write a command-line program that does addition and subtraction.
 >  **Hint:** Everything argument read from the command-line is interpreted as a character [string](reference.html#string).
@@ -476,7 +476,7 @@ Rscript readings-03.R data/small-01.csv data/small-02.csv
 We wouldn't do this in real life: instead, we would have one file called `readings.R` that we committed to version control every time we got an enhancement working.
 For teaching, though, we need all the successive versions side by side.
 
-> ## Challenges {.challenge}
+> ## Challenge - A command line program with arguments  {.challenge}
 >
 >  + Write a program called `check.R` that takes the names of one or more inflammation data files as arguments and checks that all the files have the same number of rows and columns.
 >  What is the best way to test your program?
@@ -582,7 +582,7 @@ This is four lines longer than its predecessor, but broken into more digestible 
 [argparse-py]: http://docs.python.org/dev/library/argparse.html
 [vignette]: http://cran.r-project.org/web/packages/argparse/vignettes/argparse.pdf
 
-> ## Challenges {.challenge}
+> ## Challenge - Shorter command line arguments {.challenge}
 >
 >  + Rewrite this program so that it uses `-n`, `-m`, and `-x` instead of `--min`, `--mean`, and `--max` respectively.
 >    Is the code easier to read?
@@ -705,7 +705,7 @@ head data/inflammation-01.csv | Rscript readings-06.R --mean
 
 And now we're done: the program now does everything we set out to do.
 
-> ## Challenges {.challenge}
+> ## Challenge - Implementing wc in R {.challenge}
 >
 >  + Write a program called `line-count.R` that works like the Unix `wc` command:
 >    *   If no filenames are given, it reports the number of lines in standard input.

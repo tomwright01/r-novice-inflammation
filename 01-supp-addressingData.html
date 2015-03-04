@@ -74,16 +74,16 @@
 <p>The data is the results of an (not real) experiment, looking at the number of aneurisms that formed in the eyes of patients who undertook 3 different treatments.</p>
 <h3 id="addressing-by-index">Addressing by index</h3>
 <p>We have already seen how square brackets <code>[</code> can be used to subset (slice) data. The generic format is <code>dat[row_numbers,column_numbers]</code>.</p>
-<div id="challenge" class="challenge">
-<h2>Challenge</h2>
+<div id="challenge---selecting-values-1" class="challenge">
+<h2>Challenge - Selecting values 1</h2>
 <p>What will be returned by <code>dat[1,1]</code>?</p>
 </div>
 <pre class="sourceCode r"><code class="sourceCode r">dat[<span class="dv">1</span>,<span class="dv">1</span>]</code></pre>
 <pre class="output"><code>[1] &quot;Sub001&quot;
 </code></pre>
 <p>If we leave out a dimension R will interpret this as a request for all values in that dimension.</p>
-<div id="challenge-1" class="challenge">
-<h2>Challenge</h2>
+<div id="challenge---selecting-values-2" class="challenge">
+<h2>Challenge - Selecting values 2</h2>
 <p>What will be returned by <code>dat[,2]</code>?</p>
 </div>
 <p>The colon <code>:</code> can be used to create a sequence of integers.</p>
@@ -92,8 +92,8 @@
 </code></pre>
 <p>Creates a vector of numbers from 6 to 9.</p>
 <p>This can be very useful for addressing data.</p>
-<div id="challenge-2" class="challenge">
-<h2>Challenge</h2>
+<div id="challenge---subsetting-with-sequences" class="challenge">
+<h2>Challenge - Subsetting with sequences</h2>
 <p>Use the colon operator to index just the aneurism count data (columns 6 to 9).</p>
 </div>
 <p>Finally we can use the <code>c()</code> (combine) function to address non-sequential rows and columns.</p>
@@ -105,8 +105,8 @@
 9 Sub009      m Treatment2           131 19.4
 </code></pre>
 <p>Returns the first 5 columns for patients in rows 1,5,7 &amp; 9</p>
-<div id="challenge-3" class="challenge">
-<h2>Challenge</h2>
+<div id="challenge---subsetting-non-sequential-data" class="challenge">
+<h2>Challenge - Subsetting non-sequential data</h2>
 <p>Return the Age and Gender values for the first 5 patients.</p>
 </div>
 <h3 id="addressing-by-name">Addressing by name</h3>
@@ -173,8 +173,8 @@ x[x &lt;<span class="st"> </span><span class="dv">10</span>] &lt;-<span class="s
 x</code></pre>
 <pre class="output"><code>[1]  0  0  0 11 12 13
 </code></pre>
-<div id="challenge-4" class="challenge">
-<h2>Challenge</h2>
+<div id="challenge---updating-a-subset-of-values" class="challenge">
+<h2>Challenge - Updating a subset of values</h2>
 <p>In this dataset, values for Gender have been recorded as both uppercase <code>M, F</code> and lowercase <code>m,f</code>. Combine the indexing and assignment operations to convert all values to lowercase.</p>
 </div>
         </div>
