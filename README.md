@@ -30,7 +30,8 @@ nicely explained in the chapter [Contributing to a Project][pro-git] in Pro Git
 by Scott Chacon.
 
 When editing topic pages, you should change the source R Markdown
-file. Afterwards you can render the pages by running `make preview`
+file (*.Rmd). Only the changes to the R markdown and any supporting files should be committed to git. 
+Afterwards you can render the pages by running `make preview`
 from the base of the repository. Building the rendered page with the
 Makefile requires installing some dependencies first. In addition to
 the dependencies listed in the [lesson template
